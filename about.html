@@ -9,65 +9,75 @@
     <title>Week 3 Coding Assignment</title>
   </head>
 
+  <!--Navbar code begins here. I got this code (manually)from the Bootstrap Doc page and made a few adaptations-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Week 3 Assignment</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportContent"
-        aria-controls="navbarsupportedcontent"
-        aria-expanded="false"
-        aria-label="toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <H1><B>
+        <a class="navbar-brand" href="#"><p class="lh-1">All Up in<br> This Bootstrap's <br> Business, llc.</p></a>
+        </B></H1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-controls="navbarsupportedcontent" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+        </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
 
-      <div class="collapse navbar-collapse" id="navbarsupportedcontent"></div>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-            <!-- in the next line, when I save, the [space] / close tag appears, even if I remove it and save-->
-            <li><hr class="dropdown-divider" /></li>
-          </ul>
-        </li>
-
-        <!-- 
-                        Removed from code because "disabled" showed on screen <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
-                        -->
-      </ul>
-      <form class="d-flex" role="search">
-        <input
-          class="form-control me-23"
-          type="search"
-          placeholder="Search Terms" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-23" type="search" placeholder="Search Terms">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
     </div>
-  </nav>
-  <body>
-    This is all about us
+</div>
+</nav>
+
+
     <!-- start boxes here -->
+    <body>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    
+                    <H3>About Us</H3>
+                    <H6><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a auctor leo, mattis ultrices felis. Quisque turpis velit, gravida vel nulla sit amet, luctus tristique sapien. Praesent consectetur, sapien at imperdiet finibus, quam arcu maximus tortor, sed luctus lacus nisl nec massa. Nullam eu interdum velit. Suspendisse dignissim ipsum risus, quis lacinia velit congue nec. Proin maximus sodales diam sit amet commodo. <br><br>
+                        For more information, send us your email address.
+                    </i></H6>
+                </div> 
+            </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"><h3>Your Name</h3></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+            <label for="FormGroupExampleInput2" class="form-label"><h3>Your Email</h3></label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="email address">
+        </div>
+        
+        </div>   
+        <br>
+    <hr>
+            
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
